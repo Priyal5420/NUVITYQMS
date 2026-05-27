@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUVITYQMS Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Top Navbar -->
+  <header class="bg-blue-950 text-white px-8 py-5 flex justify-between items-center shadow-lg">
+    <div>
+      <h1 class="text-3xl font-bold">NUVITYQMS</h1>
+      <p class="text-sm text-gray-300">Smart ISO • Lean • MSME Management System</p>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button class="bg-green-500 px-5 py-2 rounded-xl font-semibold hover:bg-green-600">
+        Request Demo
+      </button>
+
+      <div class="w-12 h-12 rounded-full bg-blue-400 flex items-center justify-center font-bold text-xl">
+        P
+      </div>
+    </div>
+  </header>
+
+  <div class="flex">
+
+    <!-- Sidebar -->
+    <aside class="w-72 min-h-screen bg-white shadow-xl p-6">
+      <h2 class="text-2xl font-bold text-blue-950 mb-8">Main Menu</h2>
+
+      <div class="space-y-4">
+        <button class="w-full text-left bg-blue-950 text-white px-5 py-3 rounded-2xl">
+          Dashboard
+        </button>
+
+        <button class="w-full text-left bg-gray-100 px-5 py-3 rounded-2xl hover:bg-blue-100">
+          Document Control
+        </button>
+
+        <button class="w-full text-left bg-gray-100 px-5 py-3 rounded-2xl hover:bg-blue-100">
+          Audit Management
+        </button>
+
+        <button class="w-full text-left bg-gray-100 px-5 py-3 rounded-2xl hover:bg-blue-100">
+          CAPA Tracker
+        </button>
+
+        <button class="w-full text-left bg-gray-100 px-5 py-3 rounded-2xl hover:bg-blue-100">
+          Training Records
+        </button>
+
+        <button class="w-full text-left bg-gray-100 px-5 py-3 rounded-2xl hover:bg-blue-100">
+          Calibration
+        </button>
+
+        <button class="w-full text-left bg-gray-100 px-5 py-3 rounded-2xl hover:bg-blue-100">
+          Notifications
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+
+      <!-- Welcome -->
+      <div class="mb-8">
+        <h2 class="text-4xl font-bold text-gray-800">Welcome to NUVITYQMS</h2>
+        <p class="text-gray-500 mt-2">
+          Manage ISO documentation, Lean systems, audits, CAPA, and MSME compliance.
+        </p>
+      </div>
+
+      <!-- Dashboard Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+
+        <div class="bg-red-500 text-white rounded-3xl p-6 shadow-xl hover:scale-105 transition">
+          <h3 class="text-lg">Open CAPA</h3>
+          <p class="text-5xl font-bold mt-4">07</p>
+        </div>
+
+        <div class="bg-yellow-500 text-white rounded-3xl p-6 shadow-xl hover:scale-105 transition">
+          <h3 class="text-lg">Audit Due</h3>
+          <p class="text-5xl font-bold mt-4">03</p>
+        </div>
+
+        <div class="bg-blue-500 text-white rounded-3xl p-6 shadow-xl hover:scale-105 transition">
+          <h3 class="text-lg">Training Due</h3>
+          <p class="text-5xl font-bold mt-4">12</p>
+        </div>
+
+        <div class="bg-green-500 text-white rounded-3xl p-6 shadow-xl hover:scale-105 transition">
+          <h3 class="text-lg">Calibration Due</h3>
+          <p class="text-5xl font-bold mt-4">05</p>
+        </div>
+      </div>
+
+      <!-- Document Control -->
+      <div class="bg-white rounded-3xl shadow-xl p-6 mb-10">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-blue-950">Document Control</h2>
+
+          <button class="bg-blue-950 text-white px-5 py-2 rounded-xl hover:bg-blue-800">
+            Add Document
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-blue-950 text-white">
+                <th class="p-4 text-left">Document Code</th>
+                <th class="p-4 text-left">Document Name</th>
+                <th class="p-4 text-left">Department</th>
+                <th class="p-4 text-left">Revision</th>
+                <th class="p-4 text-left">Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="border-b hover:bg-gray-50">
+                <td class="p-4">NQMS-SOP-001</td>
+                <td class="p-4">Incoming Inspection SOP</td>
+                <td class="p-4">Quality</td>
+                <td class="p-4">R01</td>
+                <td class="p-4">
+                  <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm">
+                    Approved
+                  </span>
+                </td>
+              </tr>
+
+              <tr class="border-b hover:bg-gray-50">
+                <td class="p-4">NQMS-FRM-002</td>
+                <td class="p-4">CAPA Format</td>
+                <td class="p-4">QA</td>
+                <td class="p-4">R00</td>
+                <td class="p-4">
+                  <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm">
+                    Active
+                  </span>
+                </td>
+              </tr>
+
+              <tr class="border-b hover:bg-gray-50">
+                <td class="p-4">NQMS-WI-003</td>
+                <td class="p-4">Machine Cleaning WI</td>
+                <td class="p-4">Production</td>
+                <td class="p-4">R02</td>
+                <td class="p-4">
+                  <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm">
+                    Approved
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CAPA Tracker -->
+      <div class="bg-white rounded-3xl shadow-xl p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-red-500">CAPA Tracker</h2>
+
+          <button class="bg-red-500 text-white px-5 py-2 rounded-xl hover:bg-red-600">
+            Create CAPA
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-red-500 text-white">
+                <th class="p-4 text-left">Issue</th>
+                <th class="p-4 text-left">Root Cause</th>
+                <th class="p-4 text-left">Corrective Action</th>
+                <th class="p-4 text-left">Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="border-b hover:bg-gray-50">
+                <td class="p-4">Customer Complaint</td>
+                <td class="p-4">Improper Inspection</td>
+                <td class="p-4">Inspection Training</td>
+                <td class="p-4">
+                  <span class="bg-yellow-100 text-yellow-700 px-4 py-1 rounded-full text-sm">
+                    Open
+                  </span>
+                </td>
+              </tr>
+
+              <tr class="border-b hover:bg-gray-50">
+                <td class="p-4">Machine Breakdown</td>
+                <td class="p-4">No Preventive Maintenance</td>
+                <td class="p-4">PM Schedule Implemented</td>
+                <td class="p-4">
+                  <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm">
+                    Closed
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-10 text-center text-gray-500">
+        © 2026 NUVITYQMS • Smart ISO • Lean • MSME Platform
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
